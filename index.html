@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Details for Chrissie</title>
+<title>Chrissie</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -316,7 +316,7 @@
     <div class="golf-wrap">
       <canvas id="golfCanvas" width="340" height="200"></canvas>
     </div>
-    <p class="golf-hint" id="golfHint">Click enige plek op die green om te mik en te putt</p>
+    <p class="golf-hint" id="golfHint">Click en drag enige plek op die green om te mik en te putt</p>
     <p class="unlock-msg" id="unlockMsg"></p>
 
     <div class="btn-row">
@@ -579,7 +579,7 @@ function update() {
     inMotion = false;
     ball.x = hole.x; ball.y = hole.y;
     document.getElementById('golfHint').textContent = '';
-    document.getElementById('unlockMsg').textContent = 'Nicely done. Details unlocked.';
+    document.getElementById('unlockMsg').textContent = 'Jys te goed. Details unlocked';
     document.getElementById('yesBtn').disabled = false;
     return;
   }
@@ -593,7 +593,7 @@ function update() {
       document.getElementById('golfHint').textContent = 'Missed! Resetting...';
       setTimeout(() => { resetBall(); drawScene(); }, 1200);
     } else {
-      document.getElementById('golfHint').textContent = 'Click to aim again';
+      document.getElementById('golfHint').textContent = 'Click om weer te speel!';
     }
   }
 }
