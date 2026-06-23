@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Details for Chrissie</title>
+<title>Chrissie</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -293,12 +293,12 @@
 <section id="page1" class="page active">
   <div class="card">
     <h1>Hey <span>Chrissie</span> ⛸️</h1>
-    <p class="subtitle">Skate a full lap of the rink to unlock the details.</p>
+    <p class="subtitle">Skaats 'n rondte om die baan om die details te sien!</p>
 
     <div class="rink-wrap">
       <canvas id="rinkCanvas" width="340" height="220"></canvas>
     </div>
-    <p class="rink-hint" id="rinkHint">Click and drag to steer the skater around the rink</p>
+    <p class="rink-hint" id="rinkHint">Click en drag om die ysskaatser om die baan te vat</p>
     <p class="unlock-msg" id="unlockMsg"></p>
   </div>
 </section>
@@ -307,45 +307,44 @@
 <section id="page3" class="page">
   <div class="card">
     <div class="header-icon">⛸️</div>
-    <h2>Ice Skating</h2>
-    <p class="tagline">Bring socks. Confidence optional.</p>
+    <h2>Ysskaats</h2>
+    <p class="tagline">NB! Bring kouse</p>
 
     <ul class="timeline">
       <li>
         <div class="timeline-dot">1</div>
         <span>
           <span class="timeline-label">10:15</span>
-          <span class="timeline-value">Pickup</span>
+          <span class="timeline-value">Optel</span>
         </span>
       </li>
       <li>
         <div class="timeline-dot">2</div>
         <span>
-          <span class="timeline-label">Next stop</span>
-          <span class="timeline-value">My place, to meet my parents</span>
+          <span class="timeline-label">Volgende stop</span>
+          <span class="timeline-value">By my, vir 'n koffie met my ouers</span>
         </span>
       </li>
       <li>
         <div class="timeline-dot">3</div>
         <span>
           <span class="timeline-label">12:00</span>
-          <span class="timeline-value">Ice skating</span>
+          <span class="timeline-value">Ysskaats</span>
         </span>
       </li>
       <li>
         <div class="timeline-dot">4</div>
         <span>
-          <span class="timeline-label">After</span>
-          <span class="timeline-value">Lunch, on me</span>
+          <span class="timeline-label">Daarna</span>
+          <span class="timeline-value">Lunch, op my</span>
         </span>
       </li>
     </ul>
 
     <div class="pickup-box">
-      <strong>Pickup at 10:15.</strong> Dress for both meeting parents and falling on ice. Layers recommended for both.
+      <strong>Sal jou 10:15 optel.</strong> Belowe dat ek my beste sal probeer dat jy nie val nie :)
     </div>
 
-    <p class="footer-note">Ice skating skill level not required. Enthusiasm is.</p>
   </div>
 </section>
 
@@ -495,7 +494,7 @@ function handleMove(e) {
     lapDone = true;
     dragging = false;
     document.getElementById('rinkHint').textContent = '';
-    document.getElementById('unlockMsg').textContent = 'Clean lap!';
+    document.getElementById('unlockMsg').textContent = 'Jy is n natural!';
     setTimeout(() => { goNext(); }, 500);
   }
 }
